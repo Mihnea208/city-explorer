@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Secțiunea Destinații -->
+        <section id="destinatii" class="section-container">
+            <h2>Destinații</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Bucuresti</h3>
+                    <p class="country"><strong>Țara:</strong> Romania</p>
+                    <p>Orașul Etern, plin de vestigii istorice impresionante și gastronomie remarcabilă.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 4 zile</p>
+                </article>
+
+                <article class="card featured">
+                    <h3>Lisabona</h3>
+                    <p class="country"><strong>Țara:</strong> Portugalia</p>
+                    <p>Faimoasă pentru tramvaiele istorice, cartierele pitorești și priveliștile oceanice.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 3 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Tokyo</h3>
+                    <p class="country"><strong>Țara:</strong> Japonia</p>
+                    <p>O metropolă vibrantă ce îmbină tehnologia futuristă cu templele milenare.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 7 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Praga</h3>
+                    <p class="country"><strong>Țara:</strong> Cehia</p>
+                    <p>Cunoscută pentru podurile sale gotice, castelele medievale și arhitectura barocă.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 3 zile</p>
+                </article>
+
+                <article class="card">
+                    <h3>Barcelona</h3>
+                    <p class="country"><strong>Țara:</strong> Spania</p>
+                    <p>Un centru cultural renumit pentru capodoperele lui Gaudí și ieșirea la Marea Mediterană.</p>
+                    <p class="duration"><strong>Durată recomandată:</strong> 5 zile</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Secțiunea Planifică -->
+        <section id="planifica" class="section-container">
+            <h2>Planifică</h2>
+            <form class="plan-form">
+                <div class="form-group">
+                    <label for="name">Nume complet</label>
+                    <input type="text" id="name" name="name" placeholder="ex. Ion Popescu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="destination">Destinație</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Alege o destinație...</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Lisabona">Lisabona</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="Praga">Praga</option>
+                        <option value="Barcelona">Barcelona</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="days">Număr de zile</label>
+                    <input type="number" id="days" name="days" min="1" max="30" placeholder="ex. 4" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- Secțiunea Recomandări -->
+        <section id="recomandari" class="section-container">
+            <h2>Recomandări de călătorie</h2>
+            <ul class="tips-list">
+                <li>Rezervă biletele pentru muzee și atracții importante cu cel puțin 2-3 săptămâni înainte.</li>
+                <li>Achiziționează un abonament de transport public local pentru a economisi timp și bani.</li>
+                <li>Încearcă restaurantele din cartierele rezidențiale pentru o experiență culinară autentică.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Proiect realizat de Oprea Mihnea, 2026</p>
+    </footer>
+
+</body>
+</html>
